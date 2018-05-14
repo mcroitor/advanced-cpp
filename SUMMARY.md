@@ -24,6 +24,7 @@
   * [Алгоритмы](standartnaya-biblioteka-s++/algoritmy/README.md)
     * [inplus: Как это работает](standartnaya-biblioteka-s++/algoritmy/inplus-kak-eto-rabotaet.md)
   * [Примеры использования стандартной библиотеки С++](standartnaya-biblioteka-s++/primery-ispolzovaniya-standartnoi-biblioteki-s++.md)
+  * [Вопросы](standartnaya-biblioteka-s++/voprosy.md)
 * [Разработка и использование библиотек программирования](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/README.md)
   * [Создание библиотек программирования](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/sozdanie-bibliotek-programmirovaniya.md)
   * [Использование динамических библиотек](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/ispolzovanie-dinamicheskikh-bibliotek.md)
