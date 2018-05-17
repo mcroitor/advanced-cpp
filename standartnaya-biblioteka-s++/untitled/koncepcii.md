@@ -4,32 +4,32 @@
 
 ## Базовые концепции
 
-* **DefaultConstructible   **- определяет наличие конструктора по умолчанию.
-* **MoveConstructible   **- объект строится передачей владения. \(конструктор перемещения _X\(X&&\)_   _**C++11**_\) 
-* **CopyConstructible   **- определяет наличие конструктора копирования.
-* **MoveAssignable   **- определяет наличие   операции перемещения \(_X& operator=\(X&&\) **C++11**_\)
-* **CopyAssignable   **- определяет наличие оператора копирования 
-* **Destructible   **- требует наличие деструктора
+* **DefaultConstructible**   - определяет наличие конструктора по умолчанию.
+* **MoveConstructible**   - объект строится передачей владения. \(конструктор перемещения _X\(X&&\)_   _**C++11**_\) 
+* **CopyConstructible**   - определяет наличие конструктора копирования.
+* **MoveAssignable**   - определяет наличие   операции перемещения \(_X& operator=\(X&&\) **C++11**_\)
+* **CopyAssignable**   - определяет наличие оператора копирования 
+* **Destructible**   - требует наличие деструктора
 
 ## Концепции размещения
 
 * **TriviallyCopyable**
-* **TrivialType  **
-*  **StandardLayoutType  **
+* **TrivialType**
+*  **StandardLayoutType**
 *  **PODType**
 
 ## Library-wide
 
 * **EqualityComparable**   - оператор равенства
-* **LessThanComparable   **- оператор упорядочения
-* **Swappable  **
-* **ValueSwappable  **
-* **NullablePointer  **
-* **Hash  **
-* **Allocator  **
-* **FunctionObject   **- наличие оператора круглые скобки \(функтор\)
-* **Callable  **
-* **Predicate   **- функтор, возвращающий логическое значение
+* **LessThanComparable**   - оператор упорядочения
+* **Swappable**
+* **ValueSwappable**
+* **NullablePointer**
+* **Hash**
+* **Allocator**
+* **FunctionObject**   - наличие оператора круглые скобки \(функтор\)
+* **Callable**
+* **Predicate**   - функтор, возвращающий логическое значение
 * **BinaryPredicate**   - предикат с двумя параметрами. Например, операторы сравнения и упорядочения являются бинарными предикатами.
 * **Compare**
 
