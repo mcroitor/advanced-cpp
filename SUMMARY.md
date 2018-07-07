@@ -12,7 +12,7 @@
   * [Пространства имён](osobennosti-razrabotki-programm-na-s++/prostranstva-imyon.md)
   * [Новые возможности стандарта С++11](osobennosti-razrabotki-programm-na-s++/novye-vozmozhnosti-standarta-s++11.md)
   * [Немного о компиляции и сборке](osobennosti-razrabotki-programm-na-s++/nemnogo-o-kompilyacii-i-sborke.md)
-* Стандартная библиотека С++
+* [Стандартная библиотека С++](standartnaya-biblioteka-s++/README.md)
   * [Обзор стандартной библиотеки С++](standartnaya-biblioteka-s++/obzor-standartnoi-biblioteki-s++.md)
   * [Структура стандартной библиотеки С++](standartnaya-biblioteka-s++/untitled/README.md)
     * [Концепции](standartnaya-biblioteka-s++/untitled/koncepcii.md)
