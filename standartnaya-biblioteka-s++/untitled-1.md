@@ -21,7 +21,7 @@
 ### методы, определенные в классе istream \(ifstream\)
 
 | **метод** | **синтаксис** | **пояснение** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | **operator &gt;&gt;** |  | оператор чтения данных из входного потока |
 | **get** | int get\(\); istream& get \( char& c \); istream& get \( char\* s, streamsize n \); istream& get \( char\* s, streamsize n, char delim \); istream& get \( streambuf& sb\); istream& get \( streambuf& sb, char delim \); | считывание символа \(символов\) из потока. |
 | **getline** | istream& getline \(char\* s, streamsize n\); istream& getline \(char\* s, streamsize n, char delim \); | чтение набора символов. символы читаются из потока до конца строки \(символ '\n'\) или пока их количество не станет равно n. |
