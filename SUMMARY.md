@@ -36,4 +36,5 @@
 * [Разработка и использование библиотек программирования](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/README.md)
   * [Создание библиотек программирования](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/sozdanie-bibliotek-programmirovaniya.md)
   * [Использование динамических библиотек](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/ispolzovanie-dinamicheskikh-bibliotek.md)
+  * [Вопросы](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/voprosy.md)
 
