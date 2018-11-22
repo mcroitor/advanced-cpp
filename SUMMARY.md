@@ -37,4 +37,5 @@
   * [Создание библиотек программирования](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/sozdanie-bibliotek-programmirovaniya.md)
   * [Использование динамических библиотек](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/ispolzovanie-dinamicheskikh-bibliotek.md)
   * [Вопросы](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/voprosy.md)
+  * [Примеры лабораторных работ](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/primery-laboratornykh-rabot.md)
 
