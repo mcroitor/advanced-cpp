@@ -60,17 +60,29 @@ public:
 
 ## Итераторы вывода
 
-Итераторы вывода \(output iterators\) позволяют получать значения элементов контейнера. Требования к итераторам вывода представлены в таблице 2.
+Итераторы вывода \(output iterators\) позволяют получать значения элементов контейнера. Требования к итераторам вывода представлены в листинге output\_iterator.h.
 
-Таблица 2 Требования итератора вывода
-
-| выражение | возвращаемый тип | утверждение/примечание состояние до/после |
-| :--- | :--- | :--- |
-| **IT\(a\)** |   | \*a = t эквивалентно \*IT\(a\) = t.  примечание: предполагается деструктор. |
-| **IT u\(a\); IT u = a;** |   |   |
-| **\*a = t** | результат не используется |   |
-| **++r** | IT& |   |
-| **r++** | IT или IT& |   |
+{% code-tabs %}
+{% code-tabs-item title="output\_iterator.h" %}
+```cpp
+template<class TYPE>
+class output_iterator {
+    TYPE* element;
+public:
+    output_iterator(output_iterator<TYPE> oit): element(oit.element){}
+    ~output_iterator(){}
+    
+    TYPE& operator *() { return *element; }
+    virtual output_iterator<TYPE> operator ++() = 0;
+    virtual output_iterator<TYPE> operator ++(int) = 0;
+    
+    bool operator == (const output_iterator<TYPE>& iit) const{
+        return element == iit.element;
+    }
+};
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ## Последовательные итераторы
 
