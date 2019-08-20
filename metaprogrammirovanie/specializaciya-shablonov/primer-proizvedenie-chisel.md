@@ -1,32 +1,30 @@
-# Пример: произведение чисел
+# Пример: вычисление факториала
 
 > **Задача:** Вычислить произведение чисел от 1 до N во время компилляции.
-
-Первоначально в задаче хотелось потребовать найти сумму чисел, однако формула арифметической прогрессии это желание отбила.
 
 Решение этой задачи сводится к факту, что каждое последующее значение зависит от предыдущего: **P\(N\) = N \* P\(N-1\)**. Исключение составляет только начальное значение, то есть для **N = 1 =&gt; P\(N\) = 1.** Шаблоны позволяют реализовать рекурсивное инстанциирование \(определение\) типов при помощи специализации шаблонов.
 
 При помощи шаблонов задача решается следующим образом \(tpl\_product.cpp\):
 
 {% code-tabs %}
-{% code-tabs-item title="tpl\_product.cpp" %}
+{% code-tabs-item title="tpl\_factorial.cpp" %}
 ```cpp
 #include <iostream>
 
 template<size_t value>
-struct Product {
+struct factorial {
 	enum {
-		RESULT = value * Product<value - 1>::RESULT
+		RESULT = value * factorial<value - 1>::RESULT
 	};
 };
 
 template<>
-struct Product<1> {
+struct factorial<0> {
 	enum { RESULT = 1 };
 };
 
 int main() {
-	std::cout << "product = " << Product<10>::RESULT;
+	std::cout << "factorial = " << factorial<10>::RESULT;
 	return 0;
 }
 ```
