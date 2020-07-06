@@ -88,7 +88,7 @@ int main(int argc, char** argv) {
 ```cpp
 #include <iostream>
 template<class TYPE>
-TYPE min(Type a, TYPE b) {
+TYPE min(TYPE a, TYPE b) {
     if (a < b) {
         return a;
     }
