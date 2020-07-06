@@ -40,4 +40,5 @@
   * [Использование динамических библиотек](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/ispolzovanie-dinamicheskikh-bibliotek.md)
   * [Вопросы](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/voprosy.md)
   * [Примеры лабораторных работ](razrabotka-i-ispolzovanie-bibliotek-programmirovaniya/primery-laboratornykh-rabot.md)
+* [Ответы на вопросы](otvety-na-voprosy.md)
 
