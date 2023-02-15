@@ -12,6 +12,7 @@
   * [Пространства имён](particularities/namespaces.md)
   * [Обработка исключительных ситуаций](particularities/exceptions.md)
   * [Немного о компиляции и сборке](particularities/building_app.md)
+  * [Рекоммендации по написанию кода](particularities/recommendations.md)
   * [Новые возможности стандарта С++11](particularities/new_features.md)
   * [Терминология](particularities/terms.md)
 * [Понятие структур данных](structures/README.md)
