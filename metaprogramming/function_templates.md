@@ -4,8 +4,7 @@
 
 Шаблоном функций называют общее описание семейства функций \(обобщенного алгоритма \). Об этом уже было сказано, но рассмотрим их поподробней.
 
-{% code-tabs %}
-{% code-tabs-item title="find\_min\_int.cpp" %}
+{% code title="find\_min\_int.cpp" %}
 ```cpp
 int min(int a, int b){
   int result = a;
@@ -15,13 +14,11 @@ int min(int a, int b){
   return result;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Если нам понадобится поиск минимального целого числа, то можно воспользоваться функцией, представленной в листинге _**find\_min\_int.cpp**_. Однако, для поиска минимума среди действительных чисел придется в программу добавить функцию из листинга _**find\_min\_float.cpp**_:
 
-{% code-tabs %}
-{% code-tabs-item title="find\_min\_float.cpp" %}
+{% code title="find_min_float.cpp" %}
 ```cpp
 float min(float a, float b){
   float result = a;
@@ -31,15 +28,12 @@ float min(float a, float b){
   return result;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
 
 Таким образом, для каждого типа приходится переопределять функцию.
 
 Однако, для каждого типа данных функция выглядит одинаково. В связи с чем язык С++ предлагает механизм шаблонов, который позволяет описать семейство функций. Пример соответсвующего шаблона приведен в листинге **find\_min\_tpl.cpp**.
 
-{% code-tabs %}
-{% code-tabs-item title="find\_min\_tpl.cpp" %}
+{% code title="find_min_tpl.cpp" %}
 ```cpp
 template<typename TYPE>
 TYPE min(TYPE a, TYPE b){
@@ -50,8 +44,7 @@ TYPE min(TYPE a, TYPE b){
   return result;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Определение шаблона начинается с ключевой конструкции template&lt;typename TYPE, ...&gt; где в угловых скобках указываются параметры шаблона. Параметров шаблона может быть любое количество, в качестве параметра может быть тип или перечислимое значение.
 
@@ -59,8 +52,7 @@ TYPE min(TYPE a, TYPE b){
 
 Вызов шаблонной функции, в общем, эквивалентен вызову обыкновенной функции. В этом случае компилятор определит, какой тип использовать вместо TYPE, на основании типа фактических параметров. Но если подставляемые параметры окажутся разных типов, то компилятор не сможет вывести \(инстанцировать шаблон\) реализацию функции \(см. min\_inst.cpp\).
 
-{% code-tabs %}
-{% code-tabs-item title="min\_inst.cpp" %}
+{% code title="min_inst.cpp" %}
 ```cpp
 #include <iostream>
 template<class TYPE>
@@ -78,13 +70,11 @@ int main(int argc, char** argv) {
     return 0;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Эту проблему можно решить явным указанием подставляемого в шаблон типа.
 
-{% code-tabs %}
-{% code-tabs-item title="min\_inst\_2.cpp" %}
+{% code title="min_inst_2.cpp" %}
 ```cpp
 #include <iostream>
 template<class TYPE>
@@ -102,8 +92,7 @@ int main(int argc, char** argv) {
     return 0;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ### Когда шаблонная функция \(не\) будет работать?
 

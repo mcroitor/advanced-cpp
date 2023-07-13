@@ -83,8 +83,7 @@ template <class Arg1, class Arg2, class Result>
 
 Принципиальная реализация данных функторов подобна реализации функтора plus \(с \)
 
-{% code-tabs %}
-{% code-tabs-item title="plus.cpp" %}
+{% code title="plus.cpp" %}
 ```cpp
 template<class TYPE>
 struct plus: public binary_function<TYPE, TYPE, TYPE> {
@@ -93,8 +92,7 @@ struct plus: public binary_function<TYPE, TYPE, TYPE> {
     }
 };
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 | Операции сравнения: | Описание |
 | :--- | :--- |

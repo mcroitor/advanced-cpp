@@ -28,8 +28,7 @@
 
 Подобная реализация существует в С++, начиная со стандарта С++11.
 
-{% code-tabs %}
-{% code-tabs-item title="array.cpp" %}
+{% code title="array.cpp" %}
 ```cpp
 template <typename TYPE, size_t SIZE>
 class array{
@@ -94,6 +93,5 @@ public:
     }
 };
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 

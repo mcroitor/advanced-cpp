@@ -8,8 +8,7 @@ _Дан целочисленный массив. Отсортировать эл
 
 Решение:
 
-{% code-tabs %}
-{% code-tabs-item title="stdcpp01.cpp" %}
+{% code title="stdcpp01.cpp" %}
 ```cpp
 #include <algorithm>
 #include <functional>
@@ -26,8 +25,7 @@ int main(){
     return 0;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Пример 2: 
 
@@ -35,8 +33,7 @@ _Считать из файла input.txt массив целых чисел, р
 
 Решение:
 
-{% code-tabs %}
-{% code-tabs-item title="stdcpp02.cpp" %}
+{% code title="stdcpp02.cpp" %}
 ```cpp
 #include <vector>
 #include <algorithm>
@@ -58,8 +55,7 @@ int main(){
     return 0;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Пример 3: 
 
@@ -67,8 +63,7 @@ _В файле input.txt хранится список, содержащий и�
 
 Решение:
 
-{% code-tabs %}
-{% code-tabs-item title="stdcpp03.cpp" %}
+{% code title="stdcpp03.cpp" %}
 ```cpp
 #include <string>
 #include <vector>
@@ -126,8 +121,7 @@ int main(){
     return 0;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ##  Пример 4:
 

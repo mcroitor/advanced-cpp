@@ -11,8 +11,7 @@ InputIterator find(InputIterator first, InputIterator last, const T& value);
 
 можно понять, что итераторы обладают минимальными требованиями, а именно, оператор инкремента, оператор сравнения, оператор разыменования. Реализация данного алгоритма имеет следующий вид:
 
-{% code-tabs %}
-{% code-tabs-item title="ex\_find.cpp" %}
+{% code title="ex_find.cpp" %}
 ```cpp
 template <class InputIterator, class T>
 InputIterator find(InputIterator first, InputIterator last, const T& value){
@@ -25,13 +24,11 @@ InputIterator find(InputIterator first, InputIterator last, const T& value){
     return first;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Предикатная форма не сильно отличается от прямой.
 
-{% code-tabs %}
-{% code-tabs-item title="ex\_find\_if.cpp" %}
+{% code title="ex_find_if.cpp" %}
 ```cpp
 template <class InputIterator, class Predicate>
 InputIterator find_if(InputIterator first, InputIterator last, Predicate pred) {
@@ -44,13 +41,11 @@ InputIterator find_if(InputIterator first, InputIterator last, Predicate pred) {
     return first;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Также просто выглядят и другие алгоритмы, например, сравнение двух полуинтервалов.
 
-{% code-tabs %}
-{% code-tabs-item title="ex\_equal.cpp" %}
+{% code title="ex_equal.cpp" %}
 ```cpp
 template <class InputIterator1, class InputIterator2>
 bool equal(InputIterator1 first1, InputIterator1 last1, InputIterator2 first2){
@@ -64,13 +59,11 @@ bool equal(InputIterator1 first1, InputIterator1 last1, InputIterator2 first2){
     return true;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Наконец, один из алгоритмов, меняющих последовательности, прямой алгоритм копирования и его предикатная форма. Кстати, предикатная форма была введена только в стандарте С++11, однако алгоритм очень полезен в случае, когда нужно выбрать все элементы, удовлетворяющие условию.
 
-{% code-tabs %}
-{% code-tabs-item title="ex\_copy.cpp" %}
+{% code title="ex_copy.cpp" %}
 ```cpp
 template <class InputIterator, class OutputIterator>
 OutputIterator copy(
@@ -101,6 +94,5 @@ OutputIterator copy_if(
     return result;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
