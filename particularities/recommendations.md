@@ -70,7 +70,7 @@ class Fraction {
     void normalize();  
 public:  
     Fraction();  
-    Fraction(const Fraction&);  
+    Fraction(const Fraction&);
     Fraction(const int, const int);  
     Fraction operator =(const Fraction&);  
     virtual ~Fraction();  

@@ -6,8 +6,7 @@
 
 Рассмотрим код, приведенный листинге **exception\_example.cpp**.
 
-{% code-tabs %}
-{% code-tabs-item title="exception\_example.cpp" %}
+{% code title="exception\_example.cpp" overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <exception>
 #include <iostream>
@@ -23,8 +22,7 @@ int main(){
     return 0;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Он представляет собой безопасное деление целых чисел. В связи с тем, что переменные не инициализированы, делитель может равняться 0, что вызовет аварийное завершение программы. 
 
@@ -32,8 +30,7 @@ int main(){
 
 Проверку деления на ноль в данном случае можно выполнить менее кардинальным способом \(**division\_zero.cpp**\).
 
-{% code-tabs %}
-{% code-tabs-item title="divizion\_zero.cpp" %}
+{% code title="divizion\_zero.cpp" overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
@@ -48,8 +45,7 @@ int main(){
     return 0;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Однако, в случае более сложного кода подобным образом обрабатывать исключительную ситуацию уже невозможно, например, когда деление представлено в отдельной функции.
 

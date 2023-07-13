@@ -4,65 +4,54 @@
 
 Любое приложение консольного типа может запускаться с набором ключей \(параметров\). Для того, чтобы знать, какие ключи может принимать это приложение, необходимо запустить его с ключом --help или -h, в зависимости уже от реализации самого приложения. Например, об использовании компилятора GNU C++ можно узнать, выполнив следующую команду:
 
-{% code-tabs %}
-{% code-tabs-item title="compiler 01" %}
+{% code title="compiler 01" %}
 ```text
 gcc --help
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Чтобы скомпилировать файл main.cpp в файл file\[.exe\]  достаточно написать следующую строку:
 
-{% code-tabs %}
-{% code-tabs-item title="compiler 02" %}
+{% code title="compiler 02" %}
 ```text
 gcc main.cpp -o file -l stdc++
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 На самом деле можно попробовать запустить компиляцию файла только с указанием имени файла, но в этом случае компиляция будет успешна только в случае если программа использует только стандартную бублиотеку С, а полученный исполняемый файл будет называться a\[.exe\]. Поэтому ключ **-o** указывает, как будет называться выходной файл, то есть **file**. Ключ -l указывает, что к сборке результата необходимо добавить стандартную библиотеку С++. По правилам подключения библиотек программирования в ОС Linux, если файл библиотеки называется libfilename.a, то для подключения достаточно прописать -l filename. Либо указать полное имя библиотеки.
 
 Кстати, между ключом и значением можно не ставить пробел, то есть записать предыдущую команду можно следующим образом:
 
-{% code-tabs %}
-{% code-tabs-item title="compiler 03" %}
+{% code title="compiler 03" %}
 ```text
 gcc main.cpp -ofile -lstdc++
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Если проект приложения состоит из нескольких файлов, то для сборки приложения можно указать все компилируемые файлы:
 
-{% code-tabs %}
-{% code-tabs-item title="compiler 04" %}
+{% code title="compiler 04" %}
 ```text
 gcc first.cpp second.cpp main.cpp -o file -lstdc++
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 _**Помните, что заголовочные файлы не комилируются!**_
 
 Однако можно скомпилировать каждый файл в объектный, после чего из полученных файлов собрать приложение. В этом случае процесс сборки приложения в командной строка будет выглядеть следующим образом:
 
-{% code-tabs %}
-{% code-tabs-item title="compiler 05" %}
+{% code title="compiler 05" %}
 ```text
 gcc first.cpp -o fisrt.o -O2 -c -std=c++14
 gcc second.cpp -o second.o -O2 -c -std=c++14
 gcc main.cpp -o main.o -O2 -c -std=c++14
 gcc first.o second.o main.o -o file -lstdc++ -love
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Выполнять компиляцию каждого файла и исборку приложения - это становится утомительной процедурой. Поэтому для автоматизации данного процесса используют программу **make** и скрипты **Makefile** \(файл сборки\). Ниже прведен листинг _Makefile.01,_ эквивалентный по функциональности командам _compiler 05_
 
-{% code-tabs %}
-{% code-tabs-item title="Makefile.01" %}
+{% code title="Makefile.01" %}
 ```text
 all: file
 
@@ -79,8 +68,7 @@ main.o: main.cpp
     gcc -c main.cpp -O2 -std=c++14
 
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Правила написания makefile следующие:
 
@@ -97,8 +85,7 @@ main.o: main.cpp
 
 В рамках файла сборки можно определять переменные, что позволяет Makefile делать более настраиваемым. Например, в _Makefile.02_ сначала определены компилятор, выходной файл и флаги компиляции и сборки. Это позволяет легко настраивать процесс сборки программы.
 
-{% code-tabs %}
-{% code-tabs-item title="Makefile.02" %}
+{% code title="Makefile.02" %}
 ```text
 CC = gcc
 CXXFLAGS = -O2 -std=c++14
@@ -119,8 +106,7 @@ second.o: second.cpp
 main.o: main.cpp
     $(CC) -c main.cpp $(CXXFLAGS)
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 
 
