@@ -26,8 +26,7 @@ t - значение типа T; n - целочисленное значение
 
 Итераторы ввода \(Input iterators\) позволяют изменять значения объектов контейнера. Требования к итераторам ввода представлены в листинге input\_iterator.h.
 
-{% code-tabs %}
-{% code-tabs-item title="input\_iterator.h" %}
+{% code title="input_iterator.h" %}
 ```cpp
 template<class TYPE>
 class input_iterator {
@@ -53,8 +52,7 @@ public:
     }
 };
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 Учитывая, что итераторы ввода изменяют контейнер, не имеет смысла пользоваться одним и тем же итератором ввода дважды, потому что второй раз он может ссылаться на другой элемент контейнера.
 
@@ -62,8 +60,7 @@ public:
 
 Итераторы вывода \(output iterators\) позволяют получать значения элементов контейнера. Требования к итераторам вывода представлены в листинге output\_iterator.h.
 
-{% code-tabs %}
-{% code-tabs-item title="output\_iterator.h" %}
+{% code title="output_iterator.h" %}
 ```cpp
 template<class TYPE>
 class output_iterator {
@@ -81,8 +78,7 @@ public:
     }
 };
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 ## Последовательные итераторы
 

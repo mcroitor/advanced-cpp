@@ -6,8 +6,7 @@
 
 Данное определение можно описать в шаблонах следующим образом:
 
-{% code-tabs %}
-{% code-tabs-item title="tpl\_fibbonacci.cpp" %}
+{% code title="tpl_fibbonacci.cpp" %}
 ```cpp
 #include <iostream>
 
@@ -29,6 +28,5 @@ int main(){
     return 0;
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 

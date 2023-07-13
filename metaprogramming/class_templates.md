@@ -4,16 +4,14 @@
 
 Шаблоном классов называется описание множества типов данных с одинаковым поведением. Стандартным примером шаблона классов являются контейнеры. Однако сфера их применения этим не ограничивается. Пример описания шаблона классов:
 
-{% code-tabs %}
-{% code-tabs-item title="class\_template.cpp" %}
+{% code title="class_template.cpp" %}
 ```cpp
 template<class TYPE>
 class AClass{
     // implementation
 };
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 
 
 
