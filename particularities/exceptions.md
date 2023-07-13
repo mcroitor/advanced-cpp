@@ -6,7 +6,7 @@
 
 Рассмотрим код, приведенный листинге **exception\_example.cpp**.
 
-{% code title="exception\_example.cpp" overflow="wrap" lineNumbers="true" %}
+{% code title="exception_example.cpp" overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <exception>
 #include <iostream>
@@ -30,7 +30,7 @@ int main(){
 
 Проверку деления на ноль в данном случае можно выполнить менее кардинальным способом \(**division\_zero.cpp**\).
 
-{% code title="divizion\_zero.cpp" overflow="wrap" lineNumbers="true" %}
+{% code title="divizion_zero.cpp" overflow="wrap" lineNumbers="true" %}
 ```cpp
 #include <iostream>
 
