@@ -4,6 +4,7 @@
 
 Пример функтора, который меняет значения двух целочисленных переменных и подсчитывает количество вызовов:
 
+{% code title='functor_sample.cpp' %}
 ```cpp
 class _swap{
     static size_t counter = 0;
@@ -19,8 +20,11 @@ public:
     int getNrCalls() {return counter; }
 };
 
-_swap swap;
-int a = 3, b = 5;
-swap(a, b);
+int main() {
+    _swap swap;
+    int a = 3, b = 5;
+    swap(a, b);
+    return 0;
+}
 ```
-
+{% endcode %}

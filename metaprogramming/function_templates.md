@@ -28,6 +28,7 @@ float min(float a, float b){
   return result;
 }
 ```
+{% endcode %}
 
 Таким образом, для каждого типа приходится переопределять функцию.
 
